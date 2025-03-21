@@ -33,7 +33,7 @@ class TaskController extends Controller
             $validatedData = $request->validate([
                 'name' => 'required|string',
                 'description' => 'required|string',
-                'status' => 'required|in:to-do,in-progress,done',
+                'status' => 'required|in:todo,inProgress,done',
                 'priority' => 'required|in:low,medium,high',
                 'deadline' => 'required|date'
             ]);
@@ -87,7 +87,7 @@ class TaskController extends Controller
             $validatedData = $request->validate([
                 'name' => 'required|string',
                 'description' => 'required|string',
-                'status' => 'required|in:to-do,in-progress,done',
+                'status' => 'required|in:todo,inProgress,done',
                 'priority' => 'required|in:low,medium,high',
                 'deadline' => 'required|date'
             ]);
